@@ -81,3 +81,9 @@ def groupbyInterval(data, labels, interval, actionType):
     for i in range(len(split_inds)):
         ind_groups[i] = ind_groups[i][:min_group_size]
         y_channels_groups[i] = y_channels_groups[i][:, :min_group_size]
+
+print("sharika")
+print("sharika")
+print("sharika")
+print("sharika")
+print("sharika")
