@@ -16,7 +16,6 @@ def get_data(path: str, granularity: int = 1, channel: int = 0, data_limit: int 
     y = channel_data.astype(float)
     x = np.arange(len(channel_data))
     t = [datetime.strptime(time.split()[1], "%H:%M:%S.%f") for time in time_channels]
-
     return x, y, t
 
 
@@ -87,5 +86,4 @@ def getObservationSet(dataPath, labelPath, interval, channels, actionType):
 		observations = group_by_interval(data, action_times, interval, actionType)
 		observations = standardise_observations(observations[0], observations[1])
 		observationSet[channel] = observations
-	
 	return observationSet
